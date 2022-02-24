@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    box-shadow: 0 0 10px black;
+    background-color: #fff;
+    width: 340px;
+}
+
+ form {
+     padding: 20px;
+ }
+
+ h1{
+     margin-bottom: 20px;
+     text-align: center;
+     text-transform: uppercase;
+ }
+
+ input, label {
+     display: inline-block;
+     padding: 10px;
+ }
+
+ input {
+     width: 100%;
+     border-radius: 5px;
+ }
+
+ .form-box.error  .error-text{
+     text-align: center;
+     visibility:visible;
+     color: rgb(0,137,250);
+
+ }
+ .error-text {
+     visibility: hidden;
+ }
+
+
+
+
+.form-box input {
+    border: 1px solid rgb(197,197,197);
+}
+
+
+
+
+.form-box.error input {
+    border: 1px solid rgb(0,137,250);
+    background-color: rgba(0, 137,250, .1);
+}
+
+.form-box input:focus{
+    outline: none;
+    border: 1px solid rgb(88, 104, 119);
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.clear, .send, .close {
+   padding: 5px 15px;
+   width: 100px;
+   background-color: rgb(0,140,255);
+   border-style: none;
+   margin: 15px 0 15px 20px;
+   font-size: 15px;
+   text-transform: uppercase;
+   color: white;
+   letter-spacing: 1px;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+.clear:hover,
+.send:hover,
+.close:hover {
+    background-color: rgb(0,107,194);
+}
+
+
+.popup {
+    position: absolute;
+    display: flex;
+    top: -150px;
+    left: 50%;
+    transform: translate(-50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    transition: top .5s;
+}
+.popup p {
+    font-size: 20px;
+}
+.popup .close {
+    margin-top: 15px;
+}
+
+.show-popup {
+position: absolute;
+top: 30px;
+}
